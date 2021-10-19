@@ -82,16 +82,16 @@ class App extends Component {
     return (
       <div className="row">
         <div id="quote-box" className="card">
-          <blackquote className="blackquote">
+          <div className="blackquote">
             <p style={{color}} id="text" className="text-center fs-2 fw-light">
               <i className="fas fa-quote-left fs-3 me-3"></i> {text}
             </p>
-          </blackquote>
+          </div>
           <figcaption style={{color}} className="blackquote-footer text-end" id="author">
             {author}
           </figcaption>
           <div className="d-flex justify-content-between">
-            <a href={href} target="_top" className="btn" style={buttonColor}><i class="fab fa-twitter"></i></a>
+            <a href={href} target="_top" className="btn" style={buttonColor}><i className="fab fa-twitter"></i></a>
             <button
               style={buttonColor}
               className="btn"
